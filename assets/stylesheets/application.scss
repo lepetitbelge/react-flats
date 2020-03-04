@@ -1,4 +1,4 @@
-@import "cards";
+@import url('_cards.scss');
 
 body {
   background-color: white;
@@ -40,4 +40,9 @@ body {
   width: 20px;
   background-color: red;
   border-radius: 50%;
+  z-index: 0;
+  &.selected {
+    background-color: green;
+    z-index: 10000;
+  }
 }
